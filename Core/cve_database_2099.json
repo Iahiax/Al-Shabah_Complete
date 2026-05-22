@@ -1,0 +1,68 @@
+[
+  {
+    "cve": "CVE-2099-0001",
+    "name": "QuantumLeap",
+    "os": ["iOS", "macOS", "Windows", "Android"],
+    "port": 0,
+    "protocol": "any",
+    "description": "يستغل خللاً في معالجات الكم الدقيقة لجميع الأنظمة",
+    "exploit_path": "exploits/quantumleap.bin",
+    "requires": "target_qid",
+    "post": "root access on quantum-enabled devices"
+  },
+  {
+    "cve": "CVE-2099-0002",
+    "name": "NeuralJack",
+    "os": ["NeuralOS", "BrainLink"],
+    "port": 9900,
+    "protocol": "neural",
+    "description": "يخترق الواجهات العصبية المباشرة",
+    "exploit_path": "exploits/neuraljack.dylib",
+    "requires": "neural_link_id",
+    "post": "full neural control"
+  },
+  {
+    "cve": "CVE-2099-0003",
+    "name": "HyperVault",
+    "os": ["iOS", "Android"],
+    "port": 443,
+    "protocol": "tls",
+    "description": "يكسر تشفير التطبيقات المصرفية الكمّية",
+    "exploit_path": "exploits/hypervault.py",
+    "requires": "bank_app_id",
+    "post": "financial data access"
+  },
+  {
+    "cve": "CVE-2099-0004",
+    "name": "BioForge",
+    "os": ["iOS", "Android", "WearOS"],
+    "port": 0,
+    "protocol": "biometric",
+    "description": "يخدع المستشعرات الحيوية (FaceID, TouchID, Iris)",
+    "exploit_path": "exploits/bioforge.m",
+    "requires": "target_biometric_hash",
+    "post": "biometric authentication bypass"
+  },
+  {
+    "cve": "CVE-2099-0005",
+    "name": "EchoVault",
+    "os": ["iOS", "macOS"],
+    "port": 0,
+    "protocol": "airplay",
+    "description": "يخترق ميزات AirPlay الجديدة وينفذ تعليمات برمجية عن بُعد",
+    "exploit_path": "exploits/echovault.swift",
+    "requires": "airplay_service_enabled",
+    "post": "RCE via AirPlay"
+  },
+  {
+    "cve": "CVE-2099-0006",
+    "name": "ChronoShift",
+    "os": ["all"],
+    "port": 0,
+    "protocol": "ntp",
+    "description": "يخترق خوادم التوقيت الكمّي للتلاعب بالطوابع الزمنية",
+    "exploit_path": "exploits/chronoshift.c",
+    "requires": "ntp_server_ip",
+    "post": "time manipulation, certificate forging"
+  }
+]
