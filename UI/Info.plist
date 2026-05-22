@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>Al-Shabah</string>
+    <key>CFBundleIdentifier</key><string>com.architect.shadow</string>
+    <key>CFBundleVersion</key><string>6.0</string>
+    <key>com.apple.private.security.no-sandbox</key><true/>
+    <key>com.apple.private.skip-library-validation</key><true/>
+    <key>task_for_pid-allow</key><true/>
+    <key>com.apple.system-task-ports</key><true/>
+    <key>com.apple.corecapture.allow</key><true/>
+    <key>com.apple.private.allow-jit</key><true/>
+    <key>get-task-allow</key><true/>
+    <key>UIBackgroundModes</key>
+    <array><string>fetch</string><string>remote-notification</string></array>
+</dict>
+</plist>
